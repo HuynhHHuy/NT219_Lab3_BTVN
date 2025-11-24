@@ -1,4 +1,22 @@
-# NT219_Lab3_BTVN
+# NT219 – Lab 3: RSA-OAEP & Hybrid Encryption (Crypto++)
+
+## Features
+RSA key generation (3072–4096 bits)
+RSA-OAEP (SHA-256) encryption/decryption
+Hybrid mode: AES-256-GCM for large payloads + RSA-OAEP key wrapping
+JSON envelope format (self-describing)
+Base64/Hex encoding options
+Negative test protections:
+wrong key
+wrong label (AAD)
+tampered ciphertext/tag
+invalid PEM
+Performance benchmarking:
+warm-up 1–2s
+1000 rounds/block
+10 blocks
+output to CSV (summary + block-level)
+Cross-platform, UTF-8 CLI
 # genkey
 ./rsatool keygen --bits 3072 --pub pub.pem --priv priv.pem --meta keymeta.json
 
