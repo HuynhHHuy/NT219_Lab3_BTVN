@@ -1,7 +1,7 @@
 # NT219 – Lab 3: RSA-OAEP & Hybrid Encryption (Crypto++)
 
 ## Features
-RSA key generation (3072–4096 bits)
+- RSA key generation (3072–4096 bits)
 RSA-OAEP (SHA-256) encryption/decryption
 Hybrid mode: AES-256-GCM for large payloads + RSA-OAEP key wrapping
 JSON envelope format (self-describing)
